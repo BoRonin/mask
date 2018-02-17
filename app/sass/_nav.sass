@@ -1,0 +1,54 @@
+@import "vars"
+
+.main-nav
+
+    position: fixed
+    top: 0
+    left: 0
+    right: 0
+    background-color: $dark
+    color: $white
+    margin: 0 auto
+    height: 70px
+    font-family: $anotherfont
+    font-weight: 300
+    z-index: 2
+    width: 100%
+
+
+    align-content: center
+    text-align: center
+
+    h1
+        font-family: $mainfont
+        font-weight: 300
+        margin-left: 60px
+        color: $white
+        span
+            color: $accent
+
+    ul
+        grid-column: 2/4
+        display: grid
+        align-content: center
+        text-align: right
+
+        .order
+            .active
+                a
+                    color: darken($accent, 10%)
+            float: right
+            padding-right: 3em
+
+            li
+                display: inline
+                padding-left: $gutter
+
+                a
+                    display: inline-block
+                    text-align: center
+                    text-decoration: none
+                    color: $white
+                    transition: color 0.15s ease-in-out
+                    &:hover
+                        color: $accent

@@ -1,0 +1,10 @@
+/node_modules/
+/.git/
+/app/css/
+/app/img/
+/app/fonts/
+/**/Thumbs.db
+/**/.DS_Store
+/temp
+/dist
+/backup

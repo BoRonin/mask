@@ -1,0 +1,36 @@
+.button
+    display: block
+    background: none
+    border: none
+    border-radius: 20px
+    color: $dark
+    background-color: $accent
+    text-decoration: none
+    padding: 17px 10px
+    // height: 70px
+    width: 250px
+    margin: 0 auto
+    text-align: center
+    font-size: 25px
+    font-family: $anotherfont
+    font-weight: 300
+    text-transform: uppercase
+    letter-spacing: 1px
+    cursor: pointer
+    outline: none
+    &:hover
+        background-color: darken($accent, 10%)
+    &:active
+        color: lighten($accent, 20%)
+
+.cta
+    margin: 0 auto
+    margin-top: 50px
+    transition: all 0.15s ease-in-out
+
+.form
+    .button
+        background-color: $accent
+        font-size: 18px
+        border-radius: 0
+        width: 100%
